@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
@@ -5,11 +6,14 @@ const rateLimit = require('express-rate-limit');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const chatbotRoute = require('./routes/chatbot');
+const cors= require('cors');
+
 
 const app = express();
 
 // Middleware to parse JSON and add security headers
 app.use(express.json());
+app.use(cors());
 app.use(helmet()); // Adds extra headers to protect from well-known web vulnerabilities
 
 // Rate limiting to prevent abuse
@@ -43,11 +47,20 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use('/api/chatbot', chatbotRoute);
 
 // Connecting to MongoDB
-mongoose.connect('mongodb://localhost:27017/neuromnia', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err));
+const uri = process.env.DB_URI; 
+
+mongoose
+  .connect(uri,{
+    useNewUrlParser: true, 
+    useUnifiedTopology: true, 
+  
+  })
+  .then(() => {
+    console.log("MongoDB connected");
+  })
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
+  });
 
 // Setting the server to listen on a port
 const PORT = process.env.PORT || 3001;
