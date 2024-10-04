@@ -41,6 +41,9 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
   }
+  .single_input{
+    width: 96%;
+  }
   
   button {
     background-color: #007bff;

@@ -78,7 +78,7 @@ const validateMessage = (req, res, next) => {
   }
 
   if (type === 'list' && (!domain || typeof domain !== 'string' || domain.trim().length === 0 || !level || typeof level !== 'string' || level.trim().length === 0)) {
-    return res.status(400).json({ error: 'Both domain and level are required and must be non-empty strings for list type.' });
+    return res.status(400).json({ error: 'Both are required and must be non-empty strings.' });
   }
 
   next();

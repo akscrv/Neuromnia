@@ -33,7 +33,7 @@ function ChatInterface() {
       });
       setResponseData(response.data);
     } catch (error) {
-      setError('Failed to lookup milestone');
+      setError('Failed to lookup milestone, please check it again.');
       console.error('Error:', error);
     } finally {
       setLoading(false);
@@ -99,6 +99,7 @@ function ChatInterface() {
           <>
             <h3>Lookup Milestone</h3>
             <input
+              className='single_input'
               type="text"
               value={input}
               onChange={handleInput}
