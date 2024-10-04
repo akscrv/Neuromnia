@@ -1,18 +1,4 @@
-# Neuromnia Full-Stack Engineer Take-Home Assignment
-
-## 🎯 Goal: Build a Simple Milestone Lookup Chatbot
-
-This assignment assesses your ability to:
-
-- **Build a basic full-stack web application.**
-- **Work with provided data (no prior knowledge about the data needed).**
-- **Write clean and understandable code.**
-
-**Time Budget:** Aim to complete this assignment within **6 hours**.
-
-**Important:** You should **NOT** require resources beyond:
-* What's provided in this repository.
-* What you can readily find with a web search (e.g., documentation for React, Node.js, etc.).
+# Completed Assignment: Neuromnia Full-Stack Engineer Take-Home Assignment
 
 ## 🚀 Getting Started
 
@@ -21,7 +7,7 @@ This assignment assesses your ability to:
 Clone the repository to your local machine using:
 
 ```bash
-git clone https://github.com/neuromnia/fse-take-home.git
+git clone https://github.com/akscrv/Neuromnia.git
 ```
 
 ### 2. Start the Backend Server
@@ -38,43 +24,19 @@ git clone https://github.com/neuromnia/fse-take-home.git
 
 Both servers should now be running!
 
-## 📝 The Assignment
 
-You will work with data located in `backend/vb_mapp_milestones.csv`. Consider it similar to a spreadsheet.
 
-**Your task is to build a web app allowing users to:**
 
-1. **Lookup Milestone:** Enter a code (e.g., "MAN-01") to retrieve its description.
-2. **List Domain:** Select a domain and level via dropdowns to view all corresponding milestones.
 
 ## 💻 Frontend (React)
 
-- **Utilize the starter code in `frontend/components/ChatInterface.js`.**
-- **Utilize the provided `frontend/index.js`.**
-- **Tasks to implement:**
-    - Button logic to trigger requests to your backend at `/api/chatbot` for actions:
-        - "Lookup Milestone" — sending the entered code.
-        - "List Domain" — sending selected domain and level.
-    - Display the fetched data in the chat interface.
-    - Show user-friendly error messages for issues like network errors or no data found.
+- **You can Switch between List Milestones & Lookup Milestone.**
+- **Enter you details and you are good to go.**
+- **Below are the Screenshots**
+![image](https://github.com/user-attachments/assets/6e92333a-3ce5-43a4-b8da-86f6e393ff68)   ![image](https://github.com/user-attachments/assets/7a15abf3-fddc-4a87-adb3-0fb33a9cd3da) ![image](https://github.com/user-attachments/assets/4b523984-bf25-4f31-8420-c541f68d3465) ![image](https://github.com/user-attachments/assets/95264853-e526-4ab8-b1ee-3d5c93e43906) ![image](https://github.com/user-attachments/assets/bf8dad7e-58b6-4c00-9ceb-8f6e6c48a0d7)
 
-## ⚙️ Backend (Node.js & Express)
 
-- **Key implementations:**
-    - **Load `vb_mapp_milestones.csv` into memory when the server starts.**
-    - **API Endpoint (`/api/chatbot`):**
-        - Determine whether the request is for "Lookup Milestone" or "List Domain."
-        - Return appropriate data based on the request type.
-        - Gracefully handle errors (e.g., milestone not found).
-    - **Ensure the provided rate limiting is active.**
 
-## ⏰ Time Management
 
-- **Focus on core functionality first.**
-- **Avoid getting bogged down with edge cases or complex error handling.** 
-- **Prioritize a working application, detailing any incomplete areas in your commit messages.**
 
-## 📤 Submission
 
-1. **Push your completed code to a public GitHub repository.**
-2. **Share the repository link with us.**
