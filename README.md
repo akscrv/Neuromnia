@@ -28,12 +28,24 @@ Both servers should now be running!
 
 
 
-## 💻 Frontend (React)
+## 💻 Working
 
 - **You can Switch between List Milestones & Lookup Milestone.**
 - **Enter you details and you are good to go.**
+
+## 📤 Screenshots
 - **Below are the Screenshots**
-![image](https://github.com/user-attachments/assets/6e92333a-3ce5-43a4-b8da-86f6e393ff68)   ![image](https://github.com/user-attachments/assets/7a15abf3-fddc-4a87-adb3-0fb33a9cd3da) ![image](https://github.com/user-attachments/assets/4b523984-bf25-4f31-8420-c541f68d3465) ![image](https://github.com/user-attachments/assets/95264853-e526-4ab8-b1ee-3d5c93e43906) ![image](https://github.com/user-attachments/assets/bf8dad7e-58b6-4c00-9ceb-8f6e6c48a0d7)
+![image](https://github.com/user-attachments/assets/76fd0969-7a1b-4d8d-8072-f6a4d5ca9f6a)
+![image](https://github.com/user-attachments/assets/ff464bb5-33d0-41e9-a45b-4ed3bcca7eef)
+![image](https://github.com/user-attachments/assets/a87c8e8d-8e8e-4d6b-a138-9fa8ca3a589d)
+![image](https://github.com/user-attachments/assets/311c6ad6-3e14-43dc-88c6-f0b7b95a0ccc)
+![image](https://github.com/user-attachments/assets/99b57572-e98c-44bd-a2dc-2cd3a0a4c06a)
+
+
+
+
+
+
 
 
 
